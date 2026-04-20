@@ -1,0 +1,66 @@
+
+
+.cv-avatar {
+  width: 120px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.cv-info {
+  flex: 1;
+  text-align: center;
+}
+
+.cv-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* SECTION */
+.cv-section {
+  margin-top: 30px;
+}
+
+.cv-section h2 {
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: navy;
+}
+
+/* ITEM */
+.cv-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cv-left h3 {
+  margin: 0;
+  color: goldenrod;
+}
+
+.cv-left h4 {
+  margin: 0;
+  color: indigo;
+}
+
+.cv-right {
+  white-space: nowrap;
+}
+
+.cv-skill {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+}
+
+.skill-title {
+  width: 200px;
+  font-weight: bold;
+  color: crimson;
+}
+
+.skill-desc {
+  flex: 1;
+}

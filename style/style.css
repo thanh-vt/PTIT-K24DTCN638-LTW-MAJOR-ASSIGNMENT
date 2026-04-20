@@ -45,7 +45,7 @@
 
 .avatar {
   width: 150px;
-  border-radius: 50%;
+  border-radius: 10%;
   margin: 20px 0;
 }
 
@@ -64,9 +64,29 @@ button:hover {
   background: #0056b3;
 }
 
+/*active menu*/
+.menu a.active {
+  color: #00c3ff;
+  font-weight: bold;
+}
+
 /* Ẩn/hiện */
 .hidden {
   display: none;
+}
+
+/* Container */
+.cv-container {
+  width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+/* HEADER */
+.cv-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 /* RESPONSIVE */
@@ -78,5 +98,53 @@ button:hover {
 
   .menu li {
     margin: 10px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Đẩy nội dung sang phải để không bị navbar đè */
+  body {
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+
+  body {
+    margin-left: 0;
   }
 }

@@ -1,0 +1,38 @@
+.project-item {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.project-item ul {
+  list-style: none;      /* bỏ dấu chấm tròn */
+  padding-left: 0;       /* bỏ thụt lề */
+  margin-top: 5px;
+}
+
+.project-item ul li::before {
+  content: "- ";
+}
+
+.project-item ul li {
+  margin: 2px 0;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-header h3 {
+  margin: 0;
+}
+
+.project-time {
+  white-space: nowrap;
+}
+
+.project-item ul {
+  margin-top: 5px;
+  padding-left: 18px;
+}
