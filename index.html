@@ -5,31 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang cá nhân</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/mini-games.css">
 </head>
 <body>
 
-<!-- MENU -->
-<header>
-  <nav class="navbar">
-    <h2 class="logo">Profile</h2>
-    <ul class="menu">
-      <li><a href="index.html" class="active">Trang chủ</a></li>
-      <li><a href="about.html">Giới thiệu</a></li>
-      <li><a href="project.html">Dự án</a></li>
-    </ul>
-  </nav>
-</header>
+<app-header></app-header>
 
 <!-- TRANG CHỦ -->
 <section id="home" class="section">
-  <h1>Xin chào</h1>
-  <img src="images/avatar.jpg" alt="avatar" class="avatar">
-  <p>Chào mừng đến với trang web cá nhân của tôi</p>
-
-  <button onclick="showMore()">Nhấn để biết thêm</button>
-  <p id="moreInfo" class="hidden">
-    Tôi là sinh viên CNTT, yêu thích lập trình và công nghệ.
+  <h1>Developer demo blog - Vũ Tất Thành</h1>
+  <p>Chào mừng đến với trang web cá nhân của tôi
   </p>
+</section>
+
+<section class="section">
+  <h2>Project cá nhân - Mini Web Games</h2>
+
+  <div class="game-layout">
+
+    <!-- SIDEBAR -->
+    <div class="game-list">
+      <div class="game-item">
+        <span>Racing Car</span>
+        <button onclick="loadGame('https://racing-car-game.netlify.app/', this)">
+          Chơi thử
+        </button>
+      </div>
+
+      <div class="game-item">
+        <span>Bouncing Ball</span>
+        <button onclick="loadGame('https://bouncing-ball-game.netlify.app/', this)">
+          Chơi thử
+        </button>
+      </div>
+
+      <div class="game-item">
+        <span>Whack The Mole</span>
+        <button onclick="loadGame('https://whach-the-mole.netlify.app/', this)">
+          Chơi thử
+        </button>
+      </div>
+    </div>
+
+    <!-- VIEWER -->
+    <div class="game-viewer">
+      <iframe id="gameFrame" src="" loading="lazy"></iframe>
+    </div>
+
+  </div>
 </section>
 
 <script src="script/script.js"></script>

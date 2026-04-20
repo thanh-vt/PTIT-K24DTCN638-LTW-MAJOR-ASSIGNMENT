@@ -8,16 +8,7 @@
   <link rel="stylesheet" href="style/about.css">
 </head>
 <body>
-<header>
-  <nav class="navbar">
-    <h2 class="logo">My Profile</h2>
-    <ul class="menu">
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="about.html" class="active">Giới thiệu</a></li>
-      <li><a href="project.html">Dự án</a></li>
-    </ul>
-  </nav>
-</header>
+<app-header></app-header>
 
 <section id="about" class="cv-container">
   <div class="cv-header">
@@ -28,7 +19,8 @@
       <p><b>Ngày sinh:</b> 25/09/1996</p>
       <p><b>Điện thoại:</b> 0374225982</p>
       <p><b>Email:</b> vutatthanh.h196@gmail.com</p>
-      <p><b>Địa chỉ:</b> Hồng Hà, Hạ Long, Quảng Ninh</p>
+      <p><b>Địa chỉ:</b> Nghĩa Đô, Hà Nội</p>
+      <p><b>Quê quán:</b> Hạ Long, Quảng Ninh</p>
       <p><b>Website:</b> https://github.com/thanh-vt</p>
     </div>
   </div>
@@ -39,9 +31,17 @@
 
     <div class="cv-item">
       <div class="cv-left">
+        <h3>Học viện công nghệ Bưu chính viễn thông</h3>
+        <p><i>Khoa Công nghệ thông tin</i></p>
+      </div>
+      <div class="cv-right">2025 - hiện tại</div>
+    </div>
+
+    <div class="cv-item">
+      <div class="cv-left">
         <h3>Codegym</h3>
-        <p><i>C/C++ - BOOTCAMP JAVA</i></p>
-        <p>Tốt nghiệp tháng 10/2019</p>
+        <p><i>BOOTCAMP JAVA</i></p>
+        <p>Hoàn Thành tháng 10/2019</p>
       </div>
       <div class="cv-right">05/2019 - 10/2019</div>
     </div>
@@ -84,14 +84,19 @@
     <div class="cv-skill">
       <div class="skill-title">Lập trình Backend</div>
       <div class="skill-desc">
-        Java 8 core, Spring Boot, Spring MVC, Spring Security (JWT/OAuth2), Spring Cloud.
+        Java Core, JavaEE, Spring Framework Ecosystem.<br>
+        Database: Oracle, MariaDB, MongoDB.<br>
+        Message Queue (Kafka, RabbitMQ, ActiveMQ, MQTT).<br>
+        Caching (Redis, Caffeine, Hazelcast...).<br>
+        Security: JWT, OAuth2, SSO (Google, Microsoft,...), LDAP.
       </div>
     </div>
 
     <div class="cv-skill">
       <div class="skill-title">Lập trình Frontend</div>
       <div class="skill-desc">
-        Javascript, Typescript, Angular, RxJS Store, VueJS.
+        Javascript, Typescript, Angular, VueJS, React.<br>
+        Reactive Store (RXjs, VueJS Pinia, React Redux).
       </div>
     </div>
 
@@ -105,24 +110,25 @@
     <div class="cv-skill">
       <div class="skill-title">Lập trình cơ bản</div>
       <div class="skill-desc">
-        C/C++, thuật toán căn bản.
+        C/C++, Python, thuật toán căn bản.
       </div>
     </div>
 
     <div class="cv-skill">
       <div class="skill-title">Ngoại ngữ</div>
       <div class="skill-desc">
-        Đọc hiểu tài liệu chuyên ngành bằng Tiếng Anh
+        Đọc hiểu tài liệu chuyên ngành bằng Tiếng Anh.
       </div>
     </div>
 
     <div class="cv-skill">
       <div class="skill-title">Khác</div>
       <div class="skill-desc">
-        - Sử dụng Linux (Ubuntu/CentOS) cơ bản<br>
-        - Deploy Tomcat/Nginx<br>
-        - Docker / Docker Compose<br>
-        - Jenkins CI/CD / GitLab CI cơ bản
+        - Sử dụng Linux, bash script.<br>
+        - Container platform: Docker, K8S, Openshift.<br>
+        - CICD platform: Jenkins, Gitlab Ci, ArgoCD.<br>
+        - API test: Postman, Jmeter.
+        - CLoud: AWS
       </div>
     </div>
   </div>

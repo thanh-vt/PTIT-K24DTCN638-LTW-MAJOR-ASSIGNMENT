@@ -1,0 +1,49 @@
+/* Layout chính */
+.game-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Sidebar trái */
+.game-list {
+  width: 250px;
+  border-right: 1px solid #ccc;
+}
+
+.game-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Viewer phải */
+.game-viewer {
+  flex: 1;
+}
+
+.game-viewer iframe {
+  width: 100%;
+  height: 50rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Button active */
+.game-item button.active {
+  background: #00c3ff;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .game-layout {
+    flex-direction: column;
+  }
+
+  .game-list {
+    width: 100%;
+    border-right: none;
+  }
+
+}
