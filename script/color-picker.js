@@ -70,8 +70,6 @@ class GradientDialog extends HTMLElement {
     this.shadowRoot.querySelector("#open").onclick = () => this.open();
     this.shadowRoot.querySelector("#close").onclick = () => this.close();
     this.shadowRoot.querySelector("#apply").onclick = () => this.apply();
-    // this.shadowRoot.querySelector("#addStop").addEventListener("click", () => this.addStop());
-
     this.shadowRoot.querySelectorAll(".preset").forEach(el => {
       const g = el.dataset.g;
       el.style.background = g;
@@ -211,7 +209,6 @@ class GradientDialog extends HTMLElement {
   applyPreset(g) {
     // parse stops từ gradient string
     const matches = g.match(/(rgba?\([^)]+\)|#[0-9a-fA-F]{6})\s+(\d+)%/g);
-    console.log(matches);
     if (matches) {
       this.stops = matches.map(m => {
         const [color, pos] = m.split(/\s+/);
@@ -222,8 +219,6 @@ class GradientDialog extends HTMLElement {
     this.renderStops();
     this.renderHandles();
     this.updatePreview();
-
-    document.body.style.background = g;
   }
 
   loadSaved() {

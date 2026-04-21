@@ -8,8 +8,12 @@ function loadGame(url) {
   clearTimeout(timeout);
   timeout = setTimeout(() => {
     loader.classList.add("hidden");
-  }, 8000);
+  }, 5000);
   frame.src = url;
+}
+
+window.onload = () => {
+  loader.classList.add("hidden");
 }
 
 frame.onload = () => {
