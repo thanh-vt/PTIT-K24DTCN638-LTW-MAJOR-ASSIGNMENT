@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang cá nhân</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/common.css">
   <link rel="stylesheet" href="style/mini-games.css">
+  <script src="script/script.js"></script>
+  <script src="script/color-picker.js"></script>
+  <script src="script/tech-ribbon.js"></script>
+  <script src="script/mini-games.js" defer></script>
 </head>
 <body>
 
@@ -17,7 +22,9 @@
   <p>Chào mừng đến với trang web cá nhân của tôi
   </p>
 </section>
-
+<section class="section">
+  <tech-ribbon></tech-ribbon>
+</section>
 <section class="section">
   <h2>Project cá nhân - Mini Web Games</h2>
 
@@ -48,13 +55,16 @@
     </div>
 
     <!-- VIEWER -->
-    <div class="game-viewer">
-      <iframe id="gameFrame" src="" loading="lazy"></iframe>
+    <div class="game-viewer" id="viewer">
+      <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p>Loading game...</p>
+      </div>
+
+      <iframe id="gameFrame" title="My Minigame"></iframe>
     </div>
 
   </div>
 </section>
-
-<script src="script/script.js"></script>
 </body>
 </html>

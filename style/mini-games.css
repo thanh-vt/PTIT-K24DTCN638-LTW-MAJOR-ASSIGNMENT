@@ -21,18 +21,58 @@
 /* Viewer phải */
 .game-viewer {
   flex: 1;
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; /* giữ loader nằm gọn trong khung */
+  background: #000;
 }
 
 .game-viewer iframe {
   width: 100%;
-  height: 50rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  height: 100%;
+  border: none;
 }
 
 /* Button active */
 .game-item button.active {
   background: #00c3ff;
+}
+
+/* Overlay */
+.loader {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+  transition: opacity 0.3s;
+}
+
+/* Spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #00c3ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* hidden state */
+.loader.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Responsive (mobile) */
@@ -47,3 +87,4 @@
   }
 
 }
+

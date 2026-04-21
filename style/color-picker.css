@@ -1,0 +1,105 @@
+.theme-dialog {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gradient-config {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.color-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.preview {
+  height: 80px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.open-btn {
+  background: #007bff;
+  color: white;
+}
+
+.preview {
+  height: 80px;
+}
+
+.preset-list {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.preset {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.preset:hover {
+  transform: scale(1.05);
+  border-color: #333;
+}
+
+.preset.active {
+  border: 2px solid #00c3ff;
+}
+
+.stops {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stop-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.stop-row input[type="number"] {
+  width: 60px;
+}
+
+.gradient-bar {
+  position: relative;
+  height: 40px;
+  border-radius: 8px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.handles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.handle {
+  position: absolute;
+  bottom: -8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
